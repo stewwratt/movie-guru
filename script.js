@@ -4,7 +4,11 @@ import { Router } from "/router.js";
 
 const router = new Router(views.viewError);
 
-router.get("/", () => {
+router.get("/home", () => {
+  console.log("routing to home");
+});
+
+router.get("/home", () => {
   console.log("routing to home");
 });
 
@@ -15,6 +19,7 @@ router.get("/pick-for-me", () => {
 router.get("/about", () => {
   console.log("routing to about");
 });
+
 const redraw = () => {
   router.route();
 };
